@@ -9,12 +9,13 @@
 !/.dein/
 !/.dein/**
 !/.vim/
-!/.vim/bundles/
+!/.vim/bundles/**
 !/.tmux/
 !/.tmux/**
 !/.tmux.conf
 !/.vimrc
 !/.zpreztorc
+!/.zprezto/**
 !/.zprofile
 !/.zshrc
 
