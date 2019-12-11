@@ -11,6 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+# SHELL LOGIN WITH TMUX / If not running interactively, do not do anything
+[[ $- != *i* ]] && return
+[[ -z "$TMUX" ]] && exec tmux
+
 # path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 #alias
