@@ -19,6 +19,7 @@
 !/.zprofile
 !/.zshrc
 
+!README.md
 !.gitignore
 !.gitmodules
 !.gitkeep*
