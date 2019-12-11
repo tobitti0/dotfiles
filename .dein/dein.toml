@@ -1,0 +1,60 @@
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+hook_add = '''
+  let NERDTreeShowHidden=1
+    nnoremap <silent><C-a> :NERDTreeFind<CR>:vertical res 30<CR>
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+depends = 'vim-airline'
+hook_add = '''
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline#extensions#tabline#buffer_idx_mode = 1
+    let g:airline#extensions#tabline#fnamemod = ':t'
+    let g:airline_powerline_fonts = 1
+    let g:bufferline_echo = 0
+'''
+
+[[plugins]]
+repo = 'luochen1990/rainbow'
+hook_add = '''
+    let g:rainbow_active = 1
+'''
+
+[[plugins]]
+repo = 'alvan/vim-closetag'
+on_ft = ['html', 'xhtml', 'javascript', 'typescript', 'javascript.jsx', 'typescript.tsx']
+hook_add = '''
+  let g:closetag_filenames='*.html'
+  let g:closetag_xhtml_filenames='*.jsx,*.tsx,*.vue'
+  let g:closetag_filetypes='html'
+  let g:closetag_xhtml_filetypes='jsx,tsx,javascript.jsx,typescript.tsx,vue'
+  let g:closetag_emptyTags_caseSensitive=1
+  let g:closetag_shortcut='>'
+'''
+
+[[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+  colorscheme iceberg
+
+'''
+[[plugins]]
+repo = 'edkolev/tmuxline.vim'
+hook_add = '''
+  let g:tmuxline_preset = {
+    \'a'    : '#S',
+    \'c'    : ['#(whoami)', '#(uptime | cud -d " " -f 1,2,3)'],
+    \'win'  : ['#I', '#W'],
+    \'cwin' : ['#I', '#W', '#F'],
+    \'x'    : '##',
+    \'y'    : ['%H:%M:%S', '%m/%d(%a)', '%Y'],
+    \'z'    : '#H'}
+  let g:tmuxline_theme = 'iceberg'
+'''

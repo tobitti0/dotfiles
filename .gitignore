@@ -1,0 +1,23 @@
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/.bin/
+!/.bin/**
+!/.bin.local
+!/.dein/
+!/.dein/**
+!/.vim/
+!/.vim/bundles/
+!/.tmux/
+!/.tmux/**
+!/.tmux.conf
+!/.vimrc
+!/.zpreztorc
+!/.zprofile
+!/.zshrc
+
+!.gitignore
+!.gitmodules
+!.gitkeep*
