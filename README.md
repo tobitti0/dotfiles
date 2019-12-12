@@ -1,7 +1,7 @@
 this is tobitti's dotfiles.
 
-MEMO
-'''
+#MEMO  
+```
 :TmuxlineSnapshot tmuxline.conf
-'''
+```  
 create tmuxline.conf from vim-status-line
