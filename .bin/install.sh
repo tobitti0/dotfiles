@@ -60,4 +60,7 @@ while [ $# -gt 0 ];do
 done
 
 link_to_homedir
+
+chsh -s $(which zsh)
+
 command echo -e "\e[1;36m Install completed!!!! \e[m"
