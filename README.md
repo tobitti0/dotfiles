@@ -1,6 +1,6 @@
 this is tobitti's dotfiles.
 
-#MEMO  
+# MEMO  
 ```
 :TmuxlineSnapshot tmuxline.conf
 ```  
