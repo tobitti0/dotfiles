@@ -4,3 +4,6 @@
 [submodule ".vim/bundles/repos/github.com/Shougo/dein.vim"]
 	path = .vim/bundles/repos/github.com/Shougo/dein.vim
 	url = https://github.com/Shougo/dein.vim.git
+[submodule ".tmux/plugins/tmux-cpu"]
+	path = .tmux/plugins/tmux-cpu
+	url = https://github.com/tmux-plugins/tmux-cpu
