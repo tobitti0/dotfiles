@@ -1,6 +1,11 @@
 this is tobitti's dotfiles.
 # environment  
 zsh prezto tmux  
+# install  
+```
+cd dotfile
+zsh .bin/install.sh
+```  
 # MEMO  
 when generate tmuxline.conf from vim-status-line  
 change temporarily .dein/dein.toml  
