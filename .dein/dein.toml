@@ -62,6 +62,10 @@ repo = 'edkolev/tmuxline.vim'
 hook_add = '''
   let g:airline#extensions#tmuxline#enabled = 0 "change 1 for genarate tmuxline.conf
   let g:airline#extensions#tmuxline#snapshot_file = "~/dotfiles/.tmux/tmuxline.conf"
+    let g:tmuxline_separators = {
+      \ 'right' : ' ',
+      \ 'right_alt' : '  ',
+      \ 'space' : ' '}
   let g:tmuxline_preset = {
     \'a'    : '#S',
     \'b'    : '#W',
