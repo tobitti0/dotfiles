@@ -1,4 +1,7 @@
 [[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
 repo = 'preservim/nerdtree'
 hook_add = '''
     let NERDTreeShowHidden=1
