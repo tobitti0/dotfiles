@@ -8,7 +8,6 @@ set fileencoding=utf-8
 set termencoding=utf8
 set fileencodings=utf-8,ucs-boms,euc-jp,ep932
 set fileformats=unix,dos,mac
-set ambiwidth=double
 set nobomb
 set t_Co=256
 set termguicolors
@@ -24,9 +23,9 @@ set autoread
 set hidden
 " 入力中のコマンドをステータスに表示する
 set showcmd
-"文字幅の設定（日本語向け
-set ambiwidth=double
-"自動でPasteモードを抜ける
+" 文字幅の設定（日本語向け
+"set ambiwidth=double
+" 自動でPasteモードを抜ける
 autocmd InsertLeave * set nopaste
 
 " 見た目系
