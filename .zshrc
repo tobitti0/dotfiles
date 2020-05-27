@@ -15,6 +15,15 @@ fi
 [[ $- != *i* ]] && return
 [[ -z "$TMUX" ]] && exec tmux
 
+# Display MOTD in the first pane when connected to SSH
+if [ -n "$SSH_CONNECTION" ] ; then
+  case "$(tmux display-message -p  "#{pane_index}")" in
+    1)  cat /run/motd.dynamic
+        ;;
+    *)  ;;
+  esac
+fi
+
 # path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 #alias
