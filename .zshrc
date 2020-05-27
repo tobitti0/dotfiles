@@ -19,7 +19,7 @@ fi
 if [ -n "$SSH_CONNECTION" ] ; then
   case "$(tmux display-message -p  "#{pane_index}")" in
     1)  cat /run/motd.dynamic
-        last $USER --time-format full | grep -v tmux | perl -lane '!/still logged in/ && print "Last login: @F[3..7] from $F[2]" and last'
+        last $USER --time-format full | grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | perl -lane '!/still logged in/ && print "Last login: @F[3..7] from $F[2]" and last'
         ;;
     *)  ;;
   esac
