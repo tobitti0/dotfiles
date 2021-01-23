@@ -21,5 +21,6 @@
 
 !README.md
 !.gitignore
+!.gitconfig
 !.gitmodules
 !.gitkeep*

@@ -1,0 +1,11 @@
+[gpg]
+	program = gpg
+[user]
+	signingkey = tobitti0
+	email = mail+git@tobitti.net
+	name = tobitti0
+[commit]
+	gpgsign = true
+[url "github:"]
+	InsteadOf = https://github.com/
+	InsteadOf = git@github.com:
