@@ -27,6 +27,10 @@ fi
 
 # path
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+#GPG
+export GPG_TTY=$(tty)
+
 #alias
 alias python="python3"
 alias t='tmux'
