@@ -35,6 +35,20 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'tpope/vim-markdown'
+hood_add = '''
+  let g:markdown_fenced_langulages = ['html', 'python', 'cpp', 'bash=sh', 'toml']
+'''
+
+[[plugins]]
+repo = 'previm/previm'
+hook_add = '''
+  let g:previm_open_cmd = '/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe'
+  let g:previm_wsl_mode = 1
+  let g:previm_enable_realtime=1
+'''
+
+[[plugins]]
 repo = 'luochen1990/rainbow'
 hook_add = '''
     let g:rainbow_active = 1
